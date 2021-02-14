@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sharer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="topnav" id="myTopnav">
+      <span> <img src="logo.png" class="logo" alt=""> </span>
+    </div>
+    <div class="content">
+      <%if(ch==0){%>
+      <div style="font-size: 16px;background-color: lime" >
+        <p style="color:red">Wrong credentials/Already Exists(for new share)</p>
+      </div>
+      <%}%>
+      <div class="new">
+        <h4>Already Have a SHARE?</h4>
+        <form class="" action="/check" method="post">
+          <label for="uname">Your Name:</label><br>
+          <input type="text" id="uname" style="height:2em" name="uname"/><br>
+
+          <label for="name">Share Name:</label><br>
+          <input type="text" id="name" style="height:2em" name="shareName"/><br>
+          <label for="code">Entry key:</label><br>
+          <input type="text" id="code" style="height:2em" name="shareCode"/><br>
+          <button type="submit" style="font-size: 22px; margin:10px;background-color: lime" name="button">Here</button>
+        </form>
+      </div>
+
+      <div class="old">
+        <h4>Want to create a New SHARE?</h4>
+
+        <form class="" action="/create" method="post">
+          <label for="uname">Your Name:</label><br>
+          <input type="text" id="uname" style="height:2em" name="uname"/><br>
+
+          <label for="name">Share Name:</label><br>
+          <input type="text" id="name" style="height:2em" name="shareName"/><br>
+          <label for="code">Entry Key:</label><br>
+          <input type="text" id="code" style="height:2em" name="shareCode"/><br>
+          <button type="submit" style="font-size: 22px; margin:10px;background-color: lime" name="button">Here</button>
+
+        </form>
+      </div>
+
+    </div>
+
+
+  </body>
+  <script src="main.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</html>

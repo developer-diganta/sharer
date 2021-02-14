@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sharer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles2.css">
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="img-n">
+        <span> <img src="logo.png" class="logo" alt=""> </span>
+      </div>
+      <div style="margin-top:50px; margin-right:10px; float:right">
+        <div class="dropdown">
+      <button class="dropbtn" style="font-size:20px; background-color:#b8b2a6; border-radius:10px;">Members
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <ul class="userLt">
+
+        </ul>
+      </div>
+    </div>
+
+      </div>
+      <div style="margin-top:50px; margin-right:10px; float:right">
+        <div class="dropdown">
+      <a href="/" style="outline:none; "> <button class="dropbtn" style="font-size:20px; background-color:red; border-radius:10px; cursor:pointer; outline:none">
+        Leave
+      </button>
+      </a>
+
+    </div>
+
+      </div>
+
+
+    </div>
+    <div class="dat">
+      <textarea name="name" class="txt" id="textarea" style="width:80%; height:75vh; background-color:#b8b2a6; font-size:18px;"></textarea>
+    </div>
+    <div style="display:hidden">
+      Welcome <span class="use"><%=name%></span> <span class="cod"><%=code%></span>
+      <span class="file"><%=p%></span>
+      <span id="status"></span>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
